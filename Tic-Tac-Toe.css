@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212121;
+    overflow: hidden;
+}
+#outer-structure{
+    position: relative;
+    height: 95vh;
+    width: 90vw;
+    opacity: 0.1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#outer-structure h1{
+    font-size: 3.25rem;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: cornflowerblue;
+}
+#outer-structure .game-structure{
+    height: 79%;
+    width: 44%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px;
+    padding-top: 1px;
+    overflow: hidden;
+    opacity: 0.2;
+    /* background-color: aquamarine; */
+}
+.game-structure button{
+    height: 185px;
+    width: 200px;
+    background-color: #fff;
+    border: none;
+}
+button p{
+    display: none;
+}
+.buttons{
+    height: 8%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.buttons button{
+    height: 35px;
+    width: 80px;
+    font-weight: 700;
+    display: none;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: all ease 0.55s;
+}
+.buttons button:hover{
+    background-color: #212121;
+    color: #fff;
+    transition: all ease 0.55s;
+}
+section{
+    position: absolute;
+    height: 25vh;
+    width: 30vw;
+    border-radius: 15px;
+    margin-left: 130vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: cornflowerblue;
+    transition:  ease 0.5s;
+}
+section #winner{
+    font-size: 6rem;
+    font-weight: 700;
+    /* background-color: black; */
+}
+#winner::after{
+    content: 'Wins';
+    font-size: 2.5rem;
+    color: whitesmoke;
+}
+
+section .play-again{
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 550;
+    color: #fff;
+    background-color: #555;
+    transition: all ease 0.55s;
+}
+.play-again:hover{
+    background-color: #fff;
+    color: #555;
+    transition: all ease 0.55s;
+}
+aside{
+    position: absolute;
+    height: 60vh;
+    width: 20vw;
+    border-radius: 5px;
+    margin-left: -75vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: darkgray;
+}
+aside button{
+    height: 100px;
+    width: 100px;
+    border: none;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: 700;
+    transition: all ease 0.55s;
+}
+aside button:hover{
+    background-color: #212121;
+    color: #fff;
+    transition: all ease 0.55s;
+
+}
